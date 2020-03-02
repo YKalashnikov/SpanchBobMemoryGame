@@ -1,0 +1,577 @@
+.landing-modal {
+    position: fixed;
+    background-image: url("/images/landing-modal.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100vw
+}
+
+.wrapper {
+    overflow: hidden;
+  
+}
+
+body {
+    margin:0;
+    background-image: url('/images/bodyImage.jpg');
+    height: 100vh;
+    overflow: hidden;
+}
+
+.header {
+    width: 100%;
+    height: 10vh;
+    font-family: 'Frijole', 'Regular';
+    text-align: center;
+    font-size: 9vh;
+    text-shadow: #00f7ff 0 0 10px, gold 5px 5px 5px;
+}
+.bottom-half {
+    display:flex;
+    height:90vh;
+}
+.aside {
+    height: 90vh;
+    width: 25%;
+}
+
+.stats {
+    height: 50%;
+    width: 100%;
+}
+
+.hero-container {
+    height: 50%;
+    width: 100%;
+    background-image: url('/images/hero-container.gif');
+}
+
+.main {
+    height: 90vh;
+    width: 75%;
+}
+
+.top-row {
+    width: 100%;
+    height: 50%;
+}
+
+.bottom-row {
+    width: 100%;
+    height: 50%;
+    margin-top: -3%;
+}
+
+.card-container {
+    width:17.5%;
+    height:40%;
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin-top: 1%;
+    margin-left: 2%;
+}
+
+.front {
+    background-image: url('images/cardlogo2.jpg');
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    border: 1px outset lightblue;
+    flex-grow: 1;
+    border-radius: 12px;
+    background-color:rgba(196, 235, 238, 0.692);
+}
+
+.front:hover {
+    border-radius: 12px;
+    width: 450px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.btn-container {
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.stats-container {
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+  
+}
+
+.acc-container {
+    padding-top:12px;
+    margin:10px;
+    font-family: 'Frijole', 'Regular';
+    height: 50%;
+    background-image: linear-gradient(to right, rgba(13, 129, 231, 0.664), rgb(0, 0, 0));
+    border-radius:12px;
+    text-align: center;
+    color: white;
+    font-size: 1.5em;
+
+}
+
+.total-games {
+    padding-top:12px;
+    margin:10px;
+    font-family: 'Frijole', 'Regular';
+    height: 50%;
+    border-radius:12px;
+    background-image: linear-gradient(to right, rgba(13, 129, 231, 0.664), rgb(0, 0, 0));
+    text-align: center;
+    color: white;
+    font-size: 1.5em;
+}
+
+.reset-btn {
+    outline: none;
+    cursor: pointer;
+    margin-top: 23%;
+    margin-bottom: 40%;
+    width: 25%;
+    height: 30%;
+    background-color: #000;
+    color: coral;
+    padding: inherit;
+    font-size: 1.5vw;
+    font-family: 'Frijole', 'Regular';
+    border-radius:12px;
+}
+.reset-btn:hover {
+   /*  border:1px solid yellow; */
+    box-shadow: 0px 0px 15px 5px rgb(255, 0, 0); 
+    background-color: rgb(78, 76, 76);
+    
+}
+
+.shuffle-btn {
+    border-radius:12px;
+    outline: none;
+    font-family: 'Frijole', 'Regular';
+    cursor: pointer;
+    margin-top: 23%;
+    margin-bottom: 40%;
+    width: auto;
+    height: 30%;
+    background-color: #000;
+    color: aquamarine;
+    font-size: 1.5vw;
+}
+
+.shuffle-btn:hover {
+   /*  border:1px solid yellow; */
+   box-shadow: 0px 0px 15px 5px yellow; 
+   background-color: rgb(78, 77, 76);
+}
+
+.hidden {
+    display: none;
+}
+
+.end-modal {
+    text-align: center;
+    position: fixed;
+    bottom: 15%;
+    width: 60%;
+    height: 60%;
+    margin-left: 25%;
+    background-image: url("images/modal-end.gif");
+    background-size: cover;
+    background-position: center;
+    border: 1px solid gold;
+    border-radius: 12px;
+}
+
+.modal-text {
+    font-family: 'Frijole', 'Regular';
+    font-size: 15vh;
+    color: rgb(46, 44, 44);
+}
+
+#title{
+    text-transform: uppercase;
+    font-family: 'Frijole', 'Regular';
+    color: #fff900;
+    font-size: 7vh;
+    text-align: center;
+    margin-top: 6%;
+    text-shadow: black 0 0 10px, #FF0000 5px 5px 5px;
+}
+
+.toggle-btn{
+    transform: rotate(-5deg);
+    margin-top: 25%;
+    cursor: pointer;
+    margin-left: 49%;
+    width: 15%;
+    height: 10vh;
+    border-radius: 12px;
+    font-size: 3vw;
+    font-family: 'Frijole', 'Regular';
+    background-color: gold;
+  
+}
+
+.toggle-btn:hover {
+    border-color:none;
+    background-color: black;
+    border-radius: 12px;
+    color: white;
+    transition: 1s;    
+    font-size: 5vh;    
+    
+}
+
+.play-btn {
+    transform: rotate(-5deg);
+    cursor: pointer;
+    width: 15%;
+    height: 10vh;
+    border-radius: 12px;
+    font-size: 1.5vw;
+    font-family: 'Frijole', 'Regular';
+    background-color: gold;
+}
+.play-btn:hover {
+    border-color:none;
+    background-color: black;
+    border-radius: 12px;
+    color: white;
+    transition: 1s;    
+    font-size: 1vw;    
+    
+}
+
+.Gary {
+    background-image: url('images/patrickMouth.gif');
+    background-size: 90%;
+    background-position: center;
+}
+
+.MrsPuff {
+    background-image: url('images/lobsterMoney.gif');
+    background-size: 150%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.PatrickDance {
+    background-image: url('images/squirward.gif');
+    background-size: 90%;
+    background-position: center;
+}
+.PatrickHugsSpanch {
+    background-image: url('images/iamReady.gif');
+    background-size: 90%;
+    background-position: center;
+}
+.spanchPatrcikSquard {
+    background-image: url('images/PatrcikHourse.gif');
+    background-size: 150%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.Plancton {
+    background-image: url('images/spanchHands.gif');
+    background-size: 150%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.Sindy {
+    background-image: url('images/PatrickFlowers.gif');
+    background-size: 150%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.spanchRainbow {
+    background-image: url('images/SpanchPatrick.gif');
+    background-size: 80%;
+    background-position: center;
+}
+.spanchBob {
+    background-image: url('images/spanchBobTounge.gif');
+    background-size: 120%;
+    background-position: center;
+}
+
+.SponchHouse {
+    background-image: url('images/squwerdDance.gif');
+    background-position: center;
+    background-size: 90%;
+    background-repeat: no-repeat;
+}
+
+.default-gif {
+    background-image: url('images/default.gif');
+    background-size: 150%;
+    background-position: center;
+}
+
+.zoom {
+    transition: transform .2s;
+    border-radius: 12px;
+}
+
+.zoom:hover {
+    transform: scale(1.1);
+    
+}
+
+.modal {
+    text-align: center;
+    position: fixed;
+    left: 22rem;
+    width: 60%;
+    height: 60%;
+    margin: 16% auto; 
+    background-image: url("images/modal-end.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.zoom {
+    transition: transform .2s;
+}
+
+.zoom:hover {
+    transform: scale(1.1);
+}
+/* ipad */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .card-container {
+        margin-top: 5%;
+    }
+
+    .endModal {
+        bottom: 25%;
+        width: 75%;
+        height: 35%;
+        margin-left: 13%;
+    }
+
+    .modal-text{
+        font-size: 7vh;
+    }
+
+    .shuffle-btn {
+        width: 8vw;
+        font-size: inherit;
+    }
+
+    .reset-btn {
+        width: 8vw;
+        font-size: inherit;
+        font-family: 'Frijole', 'Regular';
+    }
+    
+    .toggle-btn {
+        margin-top: 10%;
+        margin-left: 35%;
+        width: 17vh;
+        font-size: 6vw;
+    }
+}/* iphone x */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+    .header {
+        font-size: 3em;
+    }
+    .card-container {
+        margin-top: 1%;
+    }
+    .top-row {
+        margin-top: 3%;
+    }
+    .reset-btn {
+        width: 30%;
+        font-family: 'Frijole', 'Regular';
+    }
+
+    .shuffle-btn {
+        width: 30%;
+        font-family: 'Frijole', 'Regular';
+    }
+   
+}
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) {
+    .toggle-btn {
+          margin-left: 10vh;
+          text-align: center;
+    }
+    
+    .reset-btn {
+        width: 8vh;
+        font-family: 'Frijole', 'Regular';
+    }
+
+    .shuffle-btn {
+        width: 8vh;
+    }
+
+    .stats-contaier {
+        font-size: 3vh;
+    }
+
+}
+
+/* iphone 6,7,8 */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) { 
+    .header {
+        width: 100%;
+        font-size: 3em;
+    }
+
+    .aside {
+        display: flex;
+        width: 100%;
+        height: 15%;
+    }
+
+
+    .stats {
+        width:50%;
+        height: 100%;
+    }
+
+    .hero-container {
+        width: 50%;
+        height: 100%;
+    }
+
+    .main {
+        width: 100%;
+        height: 75vh;
+        display: static;
+    }
+
+    .bottom-half {
+        width: 100%;
+        height: 90vh;
+        display: block;
+    }
+
+    .card-container {
+        margin-top: 4%;
+    }
+
+    .reset-btn{
+        font-family: 'Frijole', 'Regular';
+        margin: 0;
+        padding: inherit;
+        width: 8vh;
+        height: 6vw;
+        font-size: small;
+    }
+
+    .shuffle-btn{
+        margin: 0;
+        padding: inherit;
+        width: 8vh;
+        height: 6vw;
+        font-size: small;
+    }
+
+    .endModal {
+        bottom: 25%;
+        width: 75%;
+        height: 35%;
+        margin-left: 13%;
+    }
+
+    .modal-text{
+        font-size: 7vh;
+    }
+
+    .toggle-btn {
+        margin-top: 160%;
+        margin-left: 30%;
+        width: 50%;
+        font-size: 6vw;
+    }
+    
+    #title {
+        font-size: 12vh;
+    }
+    .play-btn {
+        margin-top: 1vh;
+    }
+
+    .stats-container {
+        font-size: 3vw;
+    }
+
+    .deadpool {
+        background-size: 28%;
+    }
+    
+    .iron_Man {
+        background-size: 57%;
+        background-repeat: no-repeat;
+    }
+
+    .flash {
+     background-size: 40%;
+    }
+
+    .spiderman2 {
+        background-size: 50%;
+    }
+
+    .superman3 {
+        background-size: 36%;
+    }
+
+    .default-gif {
+        background-size: 52%;
+        background-repeat: no-repeat;
+    }
+}
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+      .header {
+        font-size: 3em;
+    }
+    
+    .reset-btn {
+        width: 15vh;
+        padding: inherit;
+        font-family: 'Frijole', 'Regular';
+    }
+
+    .shuffle-btn {
+        width: 15vh;
+        padding: inherit;
+    }
+
+    .stats-container {
+        font-size: 3vh;
+    }
+}
+
