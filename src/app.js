@@ -1,3 +1,10 @@
+import * as $ from 'jquery';
+import '../src/styles/styles.css'
+/* import {adriantnt_glass, hallelujahshort,metalgearsolid, untitled_327, victoryscreech} from './audio' */
+/* import untitled_327 from './audio/untitled_327.mp3' */
+/* import *  '../src/images' */
+
+
 
 $(document).ready(initialize);
 
@@ -33,35 +40,35 @@ function initialize(){
 
 function createFalseSound() {
     var audioElement = $("<audio autoplay></audio>");
-    var audioSource = $("<source>").attr("src", "audio/metalgearsolid.mp3");
+    var audioSource = $("<source>").attr("src", "metalgearsolid.mp3");
     var cardSound = $(audioElement).append(audioSource);
     $('.main').append(cardSound);
 }
 
 function victorySound() {
     var audioElement = $("<audio autoplay></audio>");
-    var audioSource = $("<source>").attr("src", "audio/victoryscreech.mp3");
+    var audioSource = $("<source>").attr("src", "victoryscreech.mp3");
     var cardSound = $(audioElement).append(audioSource);
     $('.main').append(cardSound);
 }
 
 function createWinSound() {
     var audioElement = $("<audio autoplay></audio>");
-    var audioSource = $("<source>").attr("src", "audio/hallelujahshort.mp3");
+    var audioSource = $("<source>").attr("src", "hallelujahshort.mp3");
     var cardSound = $(audioElement).append(audioSource);
     $('.main').append(cardSound);
 }
 
 function createSound(){
     var audioElement = $("<audio autoplay></audio>");
-    var audioSource = $("<source>").attr("src", "audio/adriantnt_glass.mp3");
+    var audioSource = $("<source>").attr("src", "adriantnt_glass.mp3");
     var cardSound = $(audioElement).append(audioSource);
     $('.main').append(cardSound);
 }
 
 function createAudio(){
     var audio = $("<audio autoplay></audio>");
-    $(audio).attr("src", "audio/untitled_327.mp3");
+    $(audio).attr("src", "untitled_327.mp3");
     $("body").append(audio);
 }
 
@@ -111,15 +118,14 @@ function toggle(){
     $(".landing-modal").addClass("hidden");
 }
 
-function createCards() {
+ function  createCards() {
     shuffle(cardArr); 
     shuffle(cardArrCopy);
-    for(var i = 0; i < cardArr.length; i++){        
+    for(var i = 0; i < cardArr.length; i++){    
         var cardContainer =  $("<div></div>").addClass("card-container").click(handleCardClicked);
-        var frontCard = $("<div></div>").addClass('front zoom')
+        var  frontCard =  $("<div></div>").addClass('front zoom')
         var backCard = $("<div></div>");
-
-        $(backCard).css({"background-image": "url(../images/"  + cardArr[i] + ")", "background-size": "cover",
+        $(backCard).css({"background-image": "url("  + cardArr[i] + ")", "background-size": "cover",
         "background-position": "center","border":"1px groove blue", "border-radius": "12px", "flex-grow" : 1}).addClass("hidden");
    
         $(cardContainer).append(frontCard);
@@ -130,7 +136,7 @@ function createCards() {
         var frontCard2 = $("<div></div>").addClass('front zoom')
         var backCard2 = $("<div></div>");
 
-        $(backCard2).css({"background-image": "url(../images/"  + cardArrCopy[i] + ")", "background-size": "cover",
+        $(backCard2).css({"background-image": "url("  + cardArrCopy[i] + ")", "background-size": "cover",
         "background-position": "center", "border":"1px groove blue", "border-radius": "12px", "flex-grow" : 1}).addClass("hidden");
    
         $(cardContainer2).append(frontCard2);
@@ -139,11 +145,16 @@ function createCards() {
     }
 }
 
-function handleCardClicked(event){
+  function handleCardClicked(event){
     if(isClicked){
+        var  frontCard =  $("<div></div>").addClass('front zoom')
         $(event.currentTarget.childNodes[0]).addClass('hidden');
-        frontCard = $(event.currentTarget.childNodes[1]).removeClass('hidden');
+        /* console.log(event.currentTarget.childNodes); */
+        //console.log(event.currentTarget.childNodes[1]);
+          frontCard =  $(event.currentTarget.childNodes[1]).removeClass('hidden');
+        
         $(frontCard).click(event => {event.stopImmediatePropagation()});
+        
         
         if( firstCardClicked === null ) {
             createSound();
@@ -176,7 +187,7 @@ function winCondition(firstCardClicked, secondCardClicked){
         createWinSound();
         matches++;
         var endStr = firstCardClicked.search(".jpg");
-        var startStr = firstCardClicked.search("/image");
+        var startStr = firstCardClicked.search("/images");
         var cardName = firstCardClicked.substring((startStr + 8), endStr);
         appendCharacter(cardName);
         firstCardClicked, secondCardClicked = null;

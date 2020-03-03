@@ -1,6 +1,6 @@
 .landing-modal {
     position: fixed;
-    background-image: url("/images/landing-modal.jpg");
+    background-image: url("../images/landing-modal.jpg");
     background-size: cover;
     background-position: center;
     height: 100%;
@@ -14,7 +14,7 @@
 
 body {
     margin:0;
-    background-image: url('/images/bodyImage.jpg');
+    background-image: url('../images/bodyImage.jpg');
     height: 100vh;
     overflow: hidden;
 }
@@ -44,7 +44,7 @@ body {
 .hero-container {
     height: 50%;
     width: 100%;
-    background-image: url('/images/hero-container.gif');
+    background-image: url('../images/hero-container.gif');
 }
 
 .main {
@@ -73,7 +73,7 @@ body {
 }
 
 .front {
-    background-image: url('images/cardlogo2.jpg');
+    background-image: url('../images/cardlogo2.jpg');
     background-size: cover;
     background-position: center;
     cursor: pointer;
@@ -182,7 +182,7 @@ body {
     width: 60%;
     height: 60%;
     margin-left: 25%;
-    background-image: url("images/modal-end.gif");
+    background-image: url("../images/modal-end.gif");
     background-size: cover;
     background-position: center;
     border: 1px solid gold;
@@ -250,66 +250,66 @@ body {
 }
 
 .Gary {
-    background-image: url('images/patrickMouth.gif');
+    background-image: url('../images/patrickMouth.gif');
     background-size: 90%;
     background-position: center;
 }
 
 .MrsPuff {
-    background-image: url('images/lobsterMoney.gif');
+    background-image: url('../images/lobsterMoney.gif');
     background-size: 150%;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .PatrickDance {
-    background-image: url('images/squirward.gif');
+    background-image: url('../images/squirward.gif');
     background-size: 90%;
     background-position: center;
 }
 .PatrickHugsSpanch {
-    background-image: url('images/iamReady.gif');
+    background-image: url('../images/iamReady.gif');
     background-size: 90%;
     background-position: center;
 }
 .spanchPatrcikSquard {
-    background-image: url('images/PatrcikHourse.gif');
+    background-image: url('../images/PatrcikHourse.gif');
     background-size: 150%;
     background-position: center;
     background-repeat: no-repeat;
 }
 .Plancton {
-    background-image: url('images/spanchHands.gif');
+    background-image: url('../images/spanchHands.gif');
     background-size: 150%;
     background-position: center;
     background-repeat: no-repeat;
 }
 .Sindy {
-    background-image: url('images/PatrickFlowers.gif');
+    background-image: url('../images/PatrickFlowers.gif');
     background-size: 150%;
     background-position: center;
     background-repeat: no-repeat;
 }
 .spanchRainbow {
-    background-image: url('images/SpanchPatrick.gif');
+    background-image: url('../images/SpanchPatrick.gif');
     background-size: 80%;
     background-position: center;
 }
 .spanchBob {
-    background-image: url('images/spanchBobTounge.gif');
+    background-image: url('../images/spanchBobTounge.gif');
     background-size: 120%;
     background-position: center;
 }
 
 .SponchHouse {
-    background-image: url('images/squwerdDance.gif');
+    background-image: url('../images/squwerdDance.gif');
     background-position: center;
     background-size: 90%;
     background-repeat: no-repeat;
 }
 
 .default-gif {
-    background-image: url('images/default.gif');
+    background-image: url('../images/default.gif');
     background-size: 150%;
     background-position: center;
 }
@@ -331,7 +331,7 @@ body {
     width: 60%;
     height: 60%;
     margin: 16% auto; 
-    background-image: url("images/modal-end.jpg");
+    background-image: url("../images/modal-end.gif");
     background-size: cover;
     background-position: center;
 }
